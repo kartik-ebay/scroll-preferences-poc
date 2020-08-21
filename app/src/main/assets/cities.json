@@ -1,0 +1,67 @@
+[
+  {
+    "continent": "Europe",
+    "city": "Berlin",
+    "tag": "Berlin"
+  },
+  {
+    "continent": "Asia",
+    "city": "Tokyo",
+    "tag": "Tokyo"
+  },
+  {
+    "continent": "South America",
+    "city": "Rio de Janiero",
+    "tag": "Rio de Janiero"
+  },
+  {
+    "continent": "Australia",
+    "city": "Sydney",
+    "tag": "Sydney"
+  },
+  {
+    "continent": "North America",
+    "city": "Montreal",
+    "tag": "Montreal"
+  },
+  {
+    "continent": "Africa",
+    "city": "Cairo",
+    "tag": "Cairo"
+  },
+  {
+    "continent": "Europe",
+    "city": "Paris",
+    "tag": "Paris"
+  },
+  {
+    "continent": "Europe",
+    "city": "London",
+    "tag": "London"
+  },
+  {
+    "continent": "Asia",
+    "city": "Beijing",
+    "tag": "Beijing"
+  },
+  {
+    "continent": "South America",
+    "city": "Buenos Aires",
+    "tag": "Buenos Aires"
+  },
+  {
+    "continent": "North America",
+    "city": "New York City",
+    "tag": "New York City"
+  },
+  {
+    "continent": "North America",
+    "city": "New York City",
+    "tag": "New York City"
+  },
+  {
+    "continent": "Australia",
+    "city": "Melbourne",
+    "tag": "Melbourne"
+  }
+]
