@@ -19,7 +19,7 @@ class LandingActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_landing)
-        setTitle("Main Screen")
+        setTitle(R.string.click_any_option_to_scroll_to_preferences)
         val preferencesSelectionAdapter = PreferencesSelectionAdapter(this)
         val linearLayoutManager = LinearLayoutManager(this)
         recyclerView = findViewById<RecyclerView>(R.id.preferences_recycler_view).apply {

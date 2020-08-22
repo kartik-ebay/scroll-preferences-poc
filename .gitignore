@@ -9,7 +9,6 @@ local.properties
 test.properties
 /*/build.xml
 /*/tests/build.xml
-eBayMobile_build
 .DS_Store
 .settings
 proguard
