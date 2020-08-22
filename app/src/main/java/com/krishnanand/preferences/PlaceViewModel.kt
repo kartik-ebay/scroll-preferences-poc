@@ -12,22 +12,28 @@ import kotlinx.coroutines.withContext
 import java.io.IOException
 
 class PlaceViewModel(): ViewModel() {
-    val placesLiveData = MutableLiveData<List<Place>>()
+    val placesLiveData = MutableLiveData<Map<String, List<Place>>>()
+    val placesData = MutableLiveData<List<Place>>()
 
     fun fetchPlacesFromJsonFile(context: Context) {
         viewModelScope.launch {
             val places = getJsonDataFromAsset(context, "cities.json")
             placesLiveData.value = places
+            val placeList = arrayListOf<Place>()
+            for ((continent, placeValues) in places) {
+                placeList.addAll(placeValues)
+            }
+            placesData.value = placeList
         }
     }
 
-    suspend fun getJsonDataFromAsset(context: Context, fileName: String): List<Place> = withContext(Dispatchers.IO) {
+    private suspend fun getJsonDataFromAsset(context: Context, fileName: String): Map<String, List<Place>> = withContext(Dispatchers.IO) {
         val jsonString: String
         try {
             jsonString = context.assets.open(fileName).bufferedReader().use { it.readText() }
-            return@withContext Gson().fromJson(jsonString, object: TypeToken<List<Place>>() {}.type) as List<Place>
+            Gson().fromJson(jsonString, object: TypeToken<Map<String, List<Place>>>() {}.type) as Map<String, List<Place>>
         } catch (ioException: IOException) {
-            return@withContext listOf<Place>() as List<Place>
+            mapOf<String, List<Place>>()
         }
     }
 }

@@ -14,13 +14,14 @@ class MainRecyclerAdapter(val context: Context, val placeViewModel: PlaceViewMod
     }
 
     override fun getItemCount(): Int  {
-        val places = placeViewModel.placesLiveData.value
+        val places = placeViewModel.placesData.value
         return if (places.isNullOrEmpty()) 0 else places.size
     }
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
-        val places = placeViewModel.placesLiveData.value
+        val places = placeViewModel.placesData.value
         if (places.isNullOrEmpty())
             return
-        holder.bind(places.get(position))
+        holder.bind(places[position])
+
     }
 }

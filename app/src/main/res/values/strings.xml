@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Preferences</string>
+    <string name="click_to_tabular_preferences">Click to show tabular city preferences</string>
+    <string name="title_continent_cities">Continents &amp; Cities</string>
 </resources>

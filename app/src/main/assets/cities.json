@@ -1,67 +1,85 @@
-[
-  {
-    "continent": "Europe",
-    "city": "Berlin",
-    "tag": "Berlin"
-  },
-  {
-    "continent": "Asia",
-    "city": "Tokyo",
-    "tag": "Tokyo"
-  },
-  {
-    "continent": "South America",
-    "city": "Rio de Janiero",
-    "tag": "Rio de Janiero"
-  },
-  {
-    "continent": "Australia",
-    "city": "Sydney",
-    "tag": "Sydney"
-  },
-  {
-    "continent": "North America",
-    "city": "Montreal",
-    "tag": "Montreal"
-  },
-  {
-    "continent": "Africa",
-    "city": "Cairo",
-    "tag": "Cairo"
-  },
-  {
-    "continent": "Europe",
-    "city": "Paris",
-    "tag": "Paris"
-  },
-  {
-    "continent": "Europe",
-    "city": "London",
-    "tag": "London"
-  },
-  {
-    "continent": "Asia",
-    "city": "Beijing",
-    "tag": "Beijing"
-  },
-  {
-    "continent": "South America",
-    "city": "Buenos Aires",
-    "tag": "Buenos Aires"
-  },
-  {
-    "continent": "North America",
-    "city": "New York City",
-    "tag": "New York City"
-  },
-  {
-    "continent": "North America",
-    "city": "New York City",
-    "tag": "New York City"
-  },
-  {
-    "continent": "Australia",
-    "city": "Melbourne",
-    "tag": "Melbourne"
-  }
-]
+{
+  "Europe": [
+    {
+      "continent": "Europe",
+      "city": "Berlin",
+      "tag": "Berlin",
+      "country": "Germany"
+    },
+    {
+      "continent": "Europe",
+      "city": "Paris",
+      "tag": "Paris",
+      "country": "France"
+    },
+    {
+      "continent": "Europe",
+      "city": "London",
+      "tag": "London",
+      "country": "England"
+    }
+  ],
+  "Asia": [
+    {
+      "continent": "Asia",
+      "city": "Tokyo",
+      "tag": "Tokyo",
+      "country": "Japan"
+    },
+    {
+      "continent": "Asia",
+      "city": "Beijing",
+      "tag": "Beijing",
+      "country": "China"
+    }
+  ],
+  "South America": [
+    {
+      "continent": "South America",
+      "city": "Rio de Janiero",
+      "tag": "Rio de Janiero",
+      "country": "Brazil"
+    },
+    {
+      "continent": "South America",
+      "city": "Buenos Aires",
+      "tag": "Buenos Aires",
+      "country": "Argentina"
+    }
+  ],
+  "Australia": [
+    {
+      "continent": "Australia",
+      "city": "Sydney",
+      "tag": "Sydney",
+      "country": "Australia"
+    },
+    {
+      "continent": "Australia",
+      "city": "Melbourne",
+      "tag": "Melbourne",
+      "country": "Australia"
+    }],
+  "North America": [
+    {
+      "continent": "North America",
+      "city": "Montreal",
+      "tag": "Montreal",
+      "country": "Canada"
+    },
+    {
+      "continent": "North America",
+      "city": "New York City",
+      "tag": "New York City",
+      "country": "United States of America"
+    }
+  ],
+  "Africa": [
+    {
+      "continent": "Africa",
+      "city": "Cairo",
+      "tag": "Cairo",
+      "country": "Egypt"
+    }
+  ]
+}
