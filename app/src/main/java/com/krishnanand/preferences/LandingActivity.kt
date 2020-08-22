@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -45,6 +46,7 @@ class LandingActivity: AppCompatActivity() {
 
         override fun onClick(v: View?) {
             val continent = selectionTextView.text
+            Toast.makeText(context, "Scroll to ${continent} was selected", Toast.LENGTH_SHORT).show()
             val intent = Intent(context, SettingsActivity::class.java).apply {
                 putExtra(Constants.SELECTED_PREFERENCE_EXTRA, continent)
             }
@@ -68,8 +70,7 @@ class LandingActivity: AppCompatActivity() {
 
         override fun onBindViewHolder(holder: PreferencesSelectionViewHolder, position: Int) {
            val preference = continentPreferences[position]
-
-            holder.bindViewHolder(preference)
+           holder.bindViewHolder(preference)
         }
 
     }

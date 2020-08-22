@@ -23,7 +23,6 @@ class CitySettingsFragment: PreferenceFragmentCompat() {
         placeViewModel = ViewModelProvider(this).get(PlaceViewModel::class.java)
         val fragmentActivity = requireActivity()
         placeViewModel.placesLiveData.observe(fragmentActivity, Observer {
-            val screen = this.preferenceScreen
             for ((continent, places) in it) {
                 val preferenceKey = continent.replace(' ', '_')
                 PreferenceCategory(context).apply {
@@ -39,7 +38,7 @@ class CitySettingsFragment: PreferenceFragmentCompat() {
                                 true
                             }
                         }
-                        screen.addPreference(this)
+                        preferenceScreen.addPreference(this)
                         addPreference(preference)
                     }
                 }
